@@ -1,0 +1,17 @@
+<!-- Dynamically creates menu from @menu object >
+<! Menu items are their own links >
+<! Menu items have a parameter called method that contains the method_name that should be called next.  This is what is used as the urls. -->
+<header>
+  <a href = "/home">home </a>
+  <br>
+</header>
+  <p><%= @message %></p>
+  <h1><%=@question.question%></h1>
+  
+   <form action = "/<%= params["class_name"] %>/play_game">
+      <p><%= @question.question %></p>
+      <%= create_multi_choice_question(@question) %>
+      
+      <br>
+      <input type ="submit">
+   </form>

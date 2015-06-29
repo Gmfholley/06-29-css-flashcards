@@ -1,0 +1,25 @@
+<!-- Dynamically creates menu from @menu object >
+<! Menu items are their own links >
+<! Menu items have a parameter called method that contains the method_name that should be called next.  This is what is used as the urls. -->
+<header>
+  <a href = "/home">home </a>
+  <br>
+</header>
+  
+
+  <h1>The question was: <%= params["game"]["answer"]%></h1>
+  
+    <p>The answer was: </p>
+    <p><%= params["game"]["answer"] %></p>
+  
+    <p>You guessed:</p>
+    <p><%= params["game"]["choice"] %></p>
+    
+    <p><%= tell_user_if_they_are_correct %></p>
+    
+    <br>
+    <p>Here is more information:</p>
+    <p><%= params["game"]["message"] %></p>
+    <br>
+    <br>
+  <a href = "../<%= "#{params['class_name']}" %>/multi_choice">Play again?</a>
