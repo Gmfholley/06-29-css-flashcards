@@ -1,8 +1,12 @@
 class FlashCardGame
   attr_reader :model
   
-  # model - Class of the model we are working with
-  
+  # initializes object
+  #
+  # model         - Class of the model we are working with
+  # num_choices   - optional Integer, defaults to 4
+  #
+
   def initialize(model, num_choices=4)
     @model = model
     @num_choices = num_choices
