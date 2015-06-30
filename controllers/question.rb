@@ -9,6 +9,13 @@ class Question
     @choices = args["choices"] || args[:choices]
     @message = args["message"] || args[:message]
     add_answer_to_choices_if_not_already
+    shuffle_choices
+  end
+  
+  def shuffle_choices
+    if !choices.blank?
+      @choices = choices.shuffle
+    end
   end
   
   
