@@ -82,19 +82,19 @@ form {
 }
 
 #primary th {
-  color: #0D9CD4;
+  color: #FF6642;
   text-align: center;
-  border: 1px #0D9CD4 solid;
+  border: 1px #FF6642 solid;
   padding: 10px;
 }
 
 /*alternate rows of the table*/
 #primary .alt {
-  background: #BEEBEB;
+  background: #E8D8DA;
 }
 
 #primary td {
-  border: 1px #0D9CD4 solid;
+  border: 1px #FF6642 solid;
   padding-left: 10px;
   padding-right: 10px;
 }
